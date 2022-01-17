@@ -68,9 +68,9 @@ strong {
 }
 
 .username_sim {
-  font-size: 0.6rem;
+  font-size: 0.625rem;
   color: grey;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 .username_logo {
@@ -511,7 +511,7 @@ a {
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:769px) {
   .top_child_navbar_eleR input {
       width: 10rem;
   }
@@ -524,6 +524,9 @@ a {
   .mediagroup0 {
       width: 60%;
   }
+  .parent_side_navbar {
+    display: none;
+}
 }
 
 @media only screen and (max-width:678px) {
@@ -543,7 +546,7 @@ a {
       font-size: 0.8rem;
   }
   .username_sim {
-      font-size: 0.55rem;
+      font-size: 0.625rem;
   }
   .group_data button {
       padding: 0.2rem 0.4rem;
@@ -575,9 +578,7 @@ a {
   .child-wrapper-group-box {
       height: 4rem;
   }
-  .parent_side_navbar {
-      display: none;
-  }
+  
 }
 
 @media only screen and (max-width:550px) {
