@@ -1,3 +1,9 @@
+*{
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.2mm;
@@ -42,19 +48,19 @@ strong {
 .top_child_navbar_eleL_group {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 .side_child_navbar_eleL {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 .top_child_navbar_eleR {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  padding-right: 2rem;
   position: relative;
 }
 
@@ -110,6 +116,7 @@ section {
 
 .child_side_navbar_top {
   padding: 2rem;
+
 }
 
 hr {
@@ -176,6 +183,8 @@ hr {
   transition: 0.3s;
 }
 
+
+
 .group_requests tr:hover td span {
   background-color: #e20074;
   color: white;
@@ -204,16 +213,18 @@ hr {
 }
 
 .wrapper-content-main {
-  margin: 2rem;
+  padding: 2rem;
   height: calc(100%-4rem);
 }
 
 .parent-wrapper-group-box {
   height: 6rem;
   width: 100%;
-  margin-top: 2rem;
+  padding: 2rem 0rem 6rem 0rem;
   display: flex;
-  overflow: auto;
+  overflow-x: none;
+  overflow-y: hidden;
+  
 }
 
 .parent-wrapper-group-box::-webkit-scrollbar {
@@ -252,7 +263,7 @@ hr {
   justify-content: space-between;
   height: 5rem;
   width: 100%;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .wrapper-content-table {
@@ -306,13 +317,18 @@ hr {
 }
 
 .group_data th {
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   background-color: #f8fafb;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2px;
   color: black;
   border-bottom: 1px solid #dfe3e7;
   border-top: 1px solid #dfe3e7;
+  border-collapse: collapse;
+}
+
+tr.group_data_TR th:not(:first-child){
+  padding-left: 0.3rem;
 }
 
 .checkbox_default {
@@ -340,7 +356,7 @@ hr {
 }
 
 .group_data td {
-  padding: 0.2rem 1rem 0.6rem 1rem;
+  padding: 0.2rem 1rem 0.6rem 2px;
   border-bottom: 1px solid #dfe3e7;
   text-align: left;
 }
@@ -442,7 +458,17 @@ a {
 
 .navbarmargin {
   /* margin: 2.5rem 0 2.5rem 0; */
-  padding: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 29px;
+}
+
+.noapprovals{
+  padding-top: 5px;
+}
+
+.yourapprovals{
+  padding-bottom: 5px;
+
 }
 
 .parent_side_navbarcloseNavbar {
@@ -485,7 +511,7 @@ a {
 
 @media only screen and (max-width: 1050px) {
   .wrapper-content-main {
-      margin: 2rem 1.5rem;
+      padding: 2rem 1.5rem;
   }
   .side_child_navbar_eleL {
       margin-left: 1rem;
@@ -517,7 +543,7 @@ a {
   }
 }
 
-@media only screen and (max-width:769px) {
+@media only screen and (max-width:768px) {
   .top_child_navbar_eleR input {
       width: 10rem;
   }
@@ -570,7 +596,7 @@ a {
       padding: 1rem 1rem 0rem 1rem;
   }
   .navbarmargin {
-      margin: 1rem 0 1rem 0;
+      padding: 1rem 0 1rem 0;
   }
   .top_child_navbar_eleR input {
       width: 12rem;

@@ -31,7 +31,7 @@
                     <div class="sidecontainer">
                         <div class="child_side_navbar_top">
                             <strong>YOUR GROUPS/PACKS</strong>
-                            <p class="navbarmargin" style="color: rgb(184, 184, 184);">You don't have access to anything yet</p>
+                            <p class="navbarmargin noapprovals" style="color: rgb(184, 184, 184);">You don't have access to anything yet</p>
                             <hr>
                             
                             <strong class="navbarmargin" style="display: block;">YOUR REQUESTS</strong>
@@ -53,9 +53,9 @@
                             </tbody>
                             </table>                  
                             <hr>
-                            <strong class="navbarmargin" style="display: block;">YOUR APPROVALS</strong>
+                            <strong class="navbarmargin yourapprovals" style="display: block;">YOUR APPROVALS</strong>
                             
-                            <p class="navbarmargin" style="display: block; color: rgb(184, 184, 184);">You don't have any approvals yet</p>
+                            <p class="navbarmargin noapprovals" style="display: block; color: rgb(184, 184, 184);">You don't have any approvals yet</p>
                             <hr>
                         </div>
                         <div class="child_side_navbar_bottom">
@@ -141,6 +141,7 @@
                                 </div>
                                 <a href="#"><img src="images/plus.svg" alt="img!"></a>
                             </div>
+                            
                         </div>
                         <div class="wrapper-content-table">
                             <div class="wrapper-content">                           
@@ -150,13 +151,13 @@
                                 <div class="top_child_navbar_eleR btnx">
                                     <i class='bx bx-search'></i>
                                     <input id="inputtext" onkeyup="processChange()" type="text" placeholder=" Find A Group" style="font-family:Arial, FontAwesome" />
-                                    <button> New Group</button>
+                                    <button>+ New Group</button>
                                 </div> 
                             </div>
                             <div class="wrapper-table">
                                 <table id ="group_table" class="group_data">
                                     <thead>
-                                        <tr>
+                                        <tr class="group_data_TR">
                                         <th style="width: 10px;"><input  onClick="selectall(this)"  class="checkbox_default" type="checkbox"></th>
                                         <th class="mediagroup0" style="color:black; text-decoration: none;">GROUP NAME<img id="sorting" class="sort" src="images/Sorting.svg" alt="img!" style="float: right; top:0px; width: 20px; height: 10px;"></th>
                                         <th class="mediagroup1" style=" text-decoration: none;">GROUP OWNER</th>
@@ -171,7 +172,7 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -179,7 +180,7 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -187,7 +188,7 @@
                                         <td class="mediagroup1 groupsrch" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -195,7 +196,7 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -203,7 +204,7 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -211,7 +212,7 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
                                         <tr>
                                         <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
@@ -219,25 +220,50 @@
                                         <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
                                         <td class="mediagroup2" >08/13/2021</td>
                                         <td style="text-align: center;">
-                                            <button type="submit"> Join</button></td>
+                                            <button type="submit">Join</button></td>
                                         </tr>
+                                        <tr>
+                                            <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
+                                            <td class="mediagroup0 groupsrch" ><img src="images/Group_icon.svg" alt="img!"><span class="overflow_text">Martin Tyler</span></td>
+                                            <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
+                                            <td class="mediagroup2" >08/13/2021</td>
+                                            <td style="text-align: center;">
+                                                <button type="submit">Join</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
+                                                <td class="mediagroup0 groupsrch" ><img src="images/Group_icon.svg" alt="img!"><span class="overflow_text">Mendicant Bias</span></td>
+                                                <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
+                                                <td class="mediagroup2" >08/13/2021</td>
+                                                <td style="text-align: center;">
+                                                    <button type="submit">Join</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 10px;"><input class="checkbox_default" name="cbox" type="checkbox"></td>
+                                                    <td class="mediagroup0 groupsrch" ><img src="images/Group_icon.svg" alt="img!"><span class="overflow_text">Iso Didact</span></td>
+                                                    <td class="mediagroup1" ><img src="images/User_Multiple.svg" alt="img!"><span class="overflow_text">Astitva Chauhan</span></td>
+                                                    <td class="mediagroup2" >08/13/2021</td>
+                                                    <td style="text-align: center;">
+                                                        <button type="submit">Join</button></td>
+                                                    </tr>
                                     </tbody>
                                 </table>
+                            </div> 
+                            <div class="bottomOptions">
+                                <span class="showing"> Showing 10-20 <span id="goto_lower"></span> - <span  id="goto_upper"></span> </span>
+                                <label for="goto" class="goto">Goto</label>
+                                <input type="text" class="gotoInput" onkeyup="GoToPage(this.value)"  />
+                                <div class="pageNumbers">
+                                    <!-- <button class="btn pageNumbersBtn"><span><</span></button> -->
+                                    <!-- <span class="allPageNo">1 2 3 4...10</span> -->
+                                    <ul id="tableList">
+                                    <li><a href="#" class="next btn pageNumbersBtn" id="nextId">></a></li>
+                                    <li><a href="#" class="prev btn pageNumbersBtn" id="prevId"><</a></li>
+                                    </ul>
+                                </div>
                             </div>                   
                         </div>
-                        <div class="bottomOptions">
-                            <span class="showing"> Showing <span id="goto_lower"></span> - <span  id="goto_upper"></span> </span>
-                            <label for="goto" class="goto">Goto</label>
-                            <input type="text" class="gotoInput" onkeyup="GoToPage(this.value)"  />
-                            <div class="pageNumbers">
-                                <!-- <button class="btn pageNumbersBtn"><span><</span></button> -->
-                                <!-- <span class="allPageNo">1 2 3 4...10</span> -->
-                                <ul id="tableList">
-                                <li><a href="#" class="next btn pageNumbersBtn" id="nextId">></a></li>
-                                <li><a href="#" class="prev btn pageNumbersBtn" id="prevId"><</a></li>
-                                </ul>
-                            </div>
-                        </div>   
+                           
                     </div>  
                 </section>
             </div>
