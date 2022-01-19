@@ -29,14 +29,12 @@ button:focus {
 
 header {
   letter-spacing: 0.2mm;
-  z-index: 2;
   box-shadow: 0 1px 4px 0 rgba(37, 37, 37, 0.1);
   display: flex;
   justify-content: space-between;
   max-height: 4rem;
   height: 5rem;
   width: 100%;
-  font-weight: 400;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -56,7 +54,7 @@ strong {
 .side_child_navbar_eleL {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .all-groups{
@@ -91,7 +89,7 @@ strong {
 }
 
 .navbarR_1 {
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .top_child_navbar_eleR img {
@@ -141,7 +139,7 @@ section {
 }
 
 .child_side_navbar_top {
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 2rem;
 }
 
 hr {
@@ -180,7 +178,7 @@ hr {
 .request-options {
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0rem;
   color: rgb(184, 184, 184);
  
 }
@@ -190,7 +188,7 @@ hr {
   float: right;
   width: 1.7rem;
   height: 1.2rem;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   transition: 0.3s;
   display: flex;
   align-items: center;
@@ -200,7 +198,7 @@ hr {
 }
 
 .request-options:hover {
-  color: #e20074;
+  color: black;
   background-color: white;
   transition: 0.3s;
 }
@@ -209,7 +207,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 3.5rem;
+  /* height: 3.5rem; */
   width: 100%;
   font-weight: 500;
 }
@@ -222,12 +220,12 @@ hr {
 
 .wrapper-content-main {
   padding: 2rem;
-  height: calc(100% - 4rem);
+  /* height: calc(100% - 4rem); */
 }
 
 .parent-wrapper-group-box {
   width: 100%;
-  padding: 1rem 0rem 2rem 0rem;
+  padding: 0.5rem 0rem 1rem 0rem;
   display: flex;
   overflow-x: scroll;
 }
@@ -272,7 +270,7 @@ th:nth-child(3){
   justify-content: space-between;
   height: auto;
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .wrapper-content-table {
@@ -353,7 +351,7 @@ tr.group_data_TR th:not(:first-child) {
 
 .overflow_text {
   width: 10rem;
-  display: inline-flex;
+  display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
