@@ -38,6 +38,7 @@ header {
   width: 100%;
   font-weight: 400;
   padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 strong {
@@ -84,7 +85,7 @@ strong {
 .top_child_navbar_eleR {
   display: flex;
   align-items: center;
-  padding-right: 2rem;
+  
   position: relative;
   cursor: pointer;
 }
