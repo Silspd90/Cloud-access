@@ -37,25 +37,48 @@ header {
   height: 5rem;
   width: 100%;
   font-weight: 400;
+  padding-left: 2.5rem;
 }
 
 strong {
   color: #e20074;
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .top_child_navbar_eleL,
 .top_child_navbar_eleL_group {
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  
 }
 
 .side_child_navbar_eleL {
   display: flex;
   align-items: center;
-  padding-left: 1.5rem;
-  padding-bottom: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.all-groups{
+  color: #e20074;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.recommended_groups{
+  color: grey;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.side_child_navbar_eleL:hover{
+  background-color: #e20074;
+  transition: 00.2s;
+  color: white;
+}
+
+.side_child_navbar_eleL:focus{
+  background-color: #e20074;
+  color: white;
 }
 
 .top_child_navbar_eleR {
@@ -63,6 +86,7 @@ strong {
   align-items: center;
   padding-right: 2rem;
   position: relative;
+  cursor: pointer;
 }
 
 .navbarR_1 {
@@ -105,7 +129,7 @@ img {
 
 .parent_side_navbar {
   display: block;
-  width: 70rem;
+  width: 50rem;
   height: 100%;
 }
 
@@ -120,7 +144,7 @@ section {
 }
 
 hr {
-  border-top: 0.1px;
+  border-top: 1px;
   color: rgb(175, 175, 175);
 }
 
@@ -145,49 +169,39 @@ hr {
   justify-content: center;
 }
 
-.group_requests tr td span {
-  border: 1px solid grey;
-  color: white;
-  transition: 0.3s;
-  color: grey;
-}
-
-.group_requests tr {
+.requests{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding-bottom: 1rem;
 }
 
-.group_requests {
-  width: 100%;
-  font-weight: 600;
-  color: grey;
+
+.request-options {
   display: flex;
   justify-content: space-between;
+  padding: 0.75rem 1rem;
+  color: rgb(184, 184, 184);
+ 
+}
+
+.option-number{
+  border-radius: 1rem;
+  float: right;
+  width: 1.7rem;
+  height: 1.2rem;
+  border: 1px solid grey;
+  transition: 0.3s;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: grey;
+  color: white;
 }
 
-.group_requests td {
-  color: grey;
-}
-
-.group_requests th {
-  color: grey;
-  text-align: left;
-}
-
-.group_requests tr:hover th {
+.request-options:hover {
   color: #e20074;
   background-color: white;
   transition: 0.3s;
-}
-
-.group_requests tr:hover td span {
-  background-color: #e20074;
-  color: white;
-  transition: 0.3s;
-  border: 1px solid #e20074;
 }
 
 .child_side_navbar_bottom {
@@ -205,12 +219,6 @@ hr {
   justify-content: space-between;
 }
 
-.child_side_navbar_bottom:hover {
-  background-color: #e20074;
-  color: white;
-  transition: 0.3s;
-}
-
 .wrapper-content-main {
   padding: 2rem;
   height: calc(100% - 4rem);
@@ -220,7 +228,7 @@ hr {
   width: 100%;
   padding: 1rem 0rem 2rem 0rem;
   display: flex;
-  overflow-x: none;
+  overflow-x: scroll;
 }
 
 .parent-wrapper-group-box::-webkit-scrollbar {
@@ -249,9 +257,13 @@ hr {
 }
 
 .child-wrapper-group-box img {
-  margin: 1rem;
+  padding: 0 1rem;
   height: 2rem;
-  width: 2rem;
+  width: 4rem;
+}
+
+th:nth-child(3){
+  padding-right: 0rem;
 }
 
 .wrapper-content {
@@ -268,6 +280,7 @@ hr {
   height: auto;
   border-radius: 5px;
   overflow: none;
+  padding: 2rem;
 }
 
 .top_child_navbar_eleR button,
@@ -319,7 +332,7 @@ hr {
   font-weight: 700;
   text-align: left;
   background-color: #f8fafb;
-  padding: 1rem 1rem 1rem 2px;
+  padding: 1rem 1rem 1rem 0px;
   color: black;
   border-bottom: 1px solid #dfe3e7;
   border-top: 1px solid #dfe3e7;
@@ -347,7 +360,7 @@ tr.group_data_TR th:not(:first-child) {
 
 .group_data {
   border-collapse: collapse;
-  width: 92%;
+  width: 100%;
   font-size: 0.8rem;
   overflow: scroll;
 }
@@ -459,17 +472,26 @@ a {
 
 .navbarmargin {
   /* margin: 2.5rem 0 2.5rem 0; */
-  padding-bottom: 2rem;
+  padding-bottom: .25rem;
   padding-top: 29px;
 }
 
+.blocking{
+  display: block;
+}
 .noapprovals {
-  padding-top: 5px;
+  padding-top: 15px;
+  color: rgb(184, 184, 184);
 }
 
 .yourapprovals {
   padding-bottom: 5px;
 }
+
+th:nth-child(3){
+  padding-right: 0rem;
+}
+
 
 .parent_side_navbarcloseNavbar {
   transform: translate(1%);
@@ -510,9 +532,6 @@ a {
 }
 
 @media only screen and (max-width: 1050px) {
-  .wrapper-content-main {
-    padding: 2rem 1.5rem;
-  }
   .side_child_navbar_eleL {
     margin-left: 1rem;
   }
@@ -559,6 +578,14 @@ a {
   .parent_side_navbar {
     display: none;
   }
+  .wrapper-content-main{
+    padding: 1rem;
+  }
+  .wrapper-content-table{
+    padding: 1rem;
+  }
+ 
+ 
 }
 
 @media only screen and (max-width: 678px) {
@@ -871,4 +898,5 @@ ul li.pageNumber.active a {
     height: 10rem;
     overflow: auto;
   }
+  
 }
