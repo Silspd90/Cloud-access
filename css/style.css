@@ -476,6 +476,10 @@ a {
   padding-top: 29px;
 }
 
+.bottompadding{
+  padding-bottom: 2rem;
+}
+
 .blocking{
   display: block;
 }
