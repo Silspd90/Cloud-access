@@ -1,7 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html > 
 <html lang="en">
   <head>
     <title>Cloud Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/cloud.png" type="image/x-icon" />
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -37,20 +40,22 @@
           <div class="sidecontainer">
             <div class="child_side_navbar_top">
               <strong class="yourapprovals">YOUR GROUPS/PACKS</strong>
-              <p class="navbarmargin noapprovals">You don't have access to anything yet</p>
+              <p class="navbarmargin noapprovals noaccess">You don't have access to anything yet</p>
               <hr/>
 
               <strong class="navbarmargin blocking">YOUR REQUESTS</strong>
 
               <div class="requests">
                 
-                <div class="request-options">Pending
+                <div class="request-options"><span>
+                  Pending
+                </span>
                     <div class="option-number">6</div>
                 </div>
-                <div class="request-options">Approved
+                <div class="request-options"><span>Approved</span>
                     <div class="option-number">6</div>
                 </div>
-                <div class="request-options">Rejected
+                <div class="request-options"><span>Rejected</span>
                     <div class="option-number">6</div>
                 </div>
 
@@ -80,10 +85,10 @@
         </aside>
         <section>
           <div class="wrapper-content-main">
-            <div class="all-groups">ALL GROUPS</div>
+            <div class="all-groups">ALL GROUPS:</div>
             <hr style="margin: 5px 0" />
-            <strong class="recommended_groups">Recommended Groups:
-                </strong>
+            <div class="recommended_groups">RECOMMENDED GROUPS:
+            </div>
                 <span style="float: right"
               ><img
                 onClick="scrollbtn(this.id)"
@@ -193,7 +198,7 @@
                 <div class="top_child_navbar_eleL_group">
                   <strong class="mobile-groups">ALL GROUPS</strong>
                 </div>
-                <div class="top_child_navbar_eleR btnx">
+                <div class="top_child_navbar_eleR btnx groupfinder">
                   <i class="bx bx-search"></i>
                   <input
                     id="inputtext"
@@ -202,14 +207,14 @@
                     placeholder=" Find A Group"
                     style="font-family: Arial, FontAwesome"
                   />
-                  <button>+ New Group</button>
+                  <button class="newgroup">+ New Group</button>
                 </div>
               </div>
               <div class="wrapper-table">
                 <table id="group_table" class="group_data">
                   <thead>
                     <tr class="group_data_TR">
-                      <th style="width: 10px">
+                      <th>
                         <input
                           onClick="selectall(this)"
                           class="checkbox_default"
