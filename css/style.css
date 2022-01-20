@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -9,13 +9,13 @@ body {
   letter-spacing: 0.2mm;
   font-size: 1rem;
 }
-
+/* 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}
+} */
 
 .fa-bars {
   color: #e20074;
@@ -47,7 +47,6 @@ strong {
 .top_child_navbar_eleL_group {
   display: flex;
   align-items: center;
-  
 }
 
 .side_child_navbar_eleL {
@@ -56,26 +55,31 @@ strong {
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-.all-groups{
+.all-groups {
   color: #e20074;
   font-weight: 800;
   padding-bottom: 1rem;
   padding-left: 0.25rem;
 }
 
-.recommended_groups{
+.recommended_groups {
   color: grey;
   font-weight: bold;
   padding-top: 1rem;
 }
 
-.side_child_navbar_eleL:hover{
+.side_child_navbar_eleL:hover {
   background-color: #e20074;
   transition: 00.2s;
   color: white;
 }
 
-.side_child_navbar_eleL:focus{
+.upperitems {
+  background-color: #e20074;
+  color: white;
+}
+
+.side_child_navbar_eleL:focus {
   background-color: #e20074;
   color: white;
 }
@@ -83,7 +87,7 @@ strong {
 .top_child_navbar_eleR {
   display: flex;
   align-items: center;
-  
+
   position: relative;
   cursor: pointer;
 }
@@ -139,7 +143,7 @@ section {
 }
 
 .child_side_navbar_top {
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 1rem 1rem 2rem;
 }
 
 hr {
@@ -168,20 +172,19 @@ hr {
   justify-content: center;
 }
 
-.requests{
+.requests {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
 }
 
-.request-options:hover span{
+.request-options:hover span {
   color: black;
   font-weight: 700;
   transition: 0.3s;
 }
 
-
-.request-options:hover .option-number{
+.request-options:hover .option-number {
   background-color: #e20074;
 }
 
@@ -190,10 +193,14 @@ hr {
   justify-content: space-between;
   padding: 0.75rem 0rem;
   color: rgb(184, 184, 184);
- 
 }
 
-.option-number{
+.permanentcolor {
+  color: black;
+  font-weight: 700;
+}
+
+.option-number {
   border-radius: 1rem;
   float: right;
   width: 1.7rem;
@@ -205,6 +212,10 @@ hr {
   justify-content: center;
   background-color: grey;
   color: white;
+}
+
+.permanentcolor2 {
+  background-color: #e20074;
 }
 
 .child_side_navbar_bottom {
@@ -265,7 +276,7 @@ hr {
   width: 4rem;
 }
 
-th:nth-child(3){
+th:nth-child(3) {
   padding-right: 0rem;
 }
 
@@ -473,15 +484,15 @@ a {
 
 .navbarmargin {
   /* margin: 2.5rem 0 2.5rem 0; */
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
   padding-top: 29px;
 }
 
-.bottompadding{
+.bottompadding {
   padding-bottom: 2rem;
 }
 
-.blocking{
+.blocking {
   display: block;
 }
 
@@ -491,7 +502,7 @@ a {
   font-weight: 500;
 }
 
-.noaccess{
+.noaccess {
   padding-bottom: 2rem;
 }
 
@@ -499,10 +510,9 @@ a {
   padding-bottom: 5px;
 }
 
-th:nth-child(3){
+th:nth-child(3) {
   padding-right: 0rem;
 }
-
 
 .parent_side_navbarcloseNavbar {
   transform: translate(1%);
@@ -516,14 +526,14 @@ th:nth-child(3){
 }
 
 @media only screen and (min-width: 2559px) {
-  *{
-  font-size: 30px;
+  html {
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 2000px) and (min-width: 1440px) {
-  *{
-  font-size: 18px;
+  html {
+    font-size: 16px;
   }
 }
 
@@ -536,10 +546,9 @@ th:nth-child(3){
   }
 }
 
-
 @media only screen and (max-width: 1300px) {
   .child_side_navbar_top {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
   body {
     font-size: 0.9rem;
@@ -548,17 +557,17 @@ th:nth-child(3){
 
 @media only screen and (max-width: 1200px) {
   .child_side_navbar_top {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
-  .side_child_navbar_eleL {
+  /* .side_child_navbar_eleL {
     margin-left: 1.5rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1050px) {
-  .side_child_navbar_eleL {
+  /* .side_child_navbar_eleL {
     margin-left: 1rem;
-  }
+  } */
   .child_side_navbar_bottom img {
     width: 1.5rem;
   }
@@ -568,6 +577,10 @@ th:nth-child(3){
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+
   .mediagroup2 {
     display: none;
   }
@@ -587,6 +600,13 @@ th:nth-child(3){
 }
 
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .top_child_navbar_eleR input {
     width: 10rem;
   }
@@ -602,14 +622,12 @@ th:nth-child(3){
   .parent_side_navbar {
     display: none;
   }
-  .wrapper-content-main{
+  .wrapper-content-main {
     padding: 1rem;
   }
-  .wrapper-content-table{
+  .wrapper-content-table {
     padding: 1rem;
   }
- 
- 
 }
 
 @media only screen and (max-width: 640px) {
@@ -630,12 +648,12 @@ th:nth-child(3){
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
+
   .child-wrapper-group-box {
-    height: 4rem;    
+    height: 4rem;
   }
-  
-  .wrapper-content{
+
+  .wrapper-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -648,18 +666,18 @@ th:nth-child(3){
     cursor: pointer;
     flex-direction: column;
   }
-  .newgroup{
-    padding: .5rem;
+  .newgroup {
+    padding: 0.5rem;
     margin-top: 0.5rem;
   }
-  .mobile-groups{
+  .mobile-groups {
     padding: 0.5rem 0.5rem 0.5rem 0rem;
   }
-  .header {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  header {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
-  
+
   .bx {
     position: absolute;
     left: 0.4rem;
@@ -667,13 +685,29 @@ th:nth-child(3){
     padding-top: 0.7rem;
     padding-left: 0.5rem;
   }
-  #inputtext{
+  #inputtext {
     margin-left: 0.5rem;
   }
+  .parent_side_navbar {
+    display: none;
+  }
+  #toggleNavbar {
+    display: block;
+  }
 
-
+  section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .group_data tbody {
+    display: block;
+    height: calc(100vh - 25rem);
+  }
+  .child_side_navbar_top {
+    height: 10rem;
+    overflow: auto;
+  }
 }
-
 
 @media only screen and (max-width: 500px) {
   .group_data tbody {
@@ -731,6 +765,8 @@ th:nth-child(3){
   }
 }
 
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
+}
 
 button,
 a,
@@ -843,24 +879,4 @@ ul li.pageNumber.active a {
 }
 
 @media only screen and (max-height: 640px) {
-  .parent_side_navbar {
-    display: none;
-  }
-  #toggleNavbar {
-    display: block;
-  }
-
-  section {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .group_data tbody {
-    display: block;
-    height: calc(100vh - 25rem);
-  }
-  .child_side_navbar_top {
-    height: 10rem;
-    overflow: auto;
-  }
-  
 }
