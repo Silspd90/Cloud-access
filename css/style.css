@@ -367,7 +367,7 @@ th:nth-child(3) {
 }
 
 .overflow_text {
-  width: 10rem;
+  width: 5rem;
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
