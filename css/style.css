@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.2mm;
-  font-size: 1rem;
+  font-size: 16px;
 }
 /* 
 input:focus,
@@ -32,7 +32,6 @@ header {
   box-shadow: 0 1px 4px 0 rgba(37, 37, 37, 0.1);
   display: flex;
   justify-content: space-between;
-  max-height: 4rem;
   height: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -124,7 +123,7 @@ img {
 
 .wrapper {
   width: 100%;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 5rem);
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -249,6 +248,10 @@ hr {
   display: none;
 }
 
+.joinbutton{
+  text-align: left;
+}
+
 .child-wrapper-group-box {
   height: 5rem;
   border-radius: 5px;
@@ -331,10 +334,6 @@ th:nth-child(3) {
   color: white;
   transition: 0.3s;
 }
-/* 
-.checkboxwidth {
-  max-width: 1.3rem;
-} */
 
 .wrapper-table {
   width: 100%;
@@ -355,7 +354,13 @@ th:nth-child(3) {
   border-bottom: 1px solid #dfe3e7;
   border-top: 1px solid #dfe3e7;
   border-collapse: collapse;
-  padding-left: 0.25rem;
+}
+
+.group_data td {
+  border-bottom: 1px solid #dfe3e7;
+  padding: 1rem 1rem 1rem 0px;
+  text-align: left;
+  height: 2.5rem;
 }
 
 .checkbox_default {
@@ -363,6 +368,12 @@ th:nth-child(3) {
   height: 1rem;
   border: solid 1px #c3c7ca;
   background-color: #fff;
+  
+}
+
+.tablecheckbox{
+  padding-right: 1rem;
+  padding-left: 0.5rem;
 }
 
 .overflow_text {
@@ -380,11 +391,6 @@ th:nth-child(3) {
   overflow: scroll;
 }
 
-.group_data td {
-  border-bottom: 1px solid #dfe3e7;
-  text-align: left;
-  height: 2.5rem;
-}
 
 .group_data img {
   height: 1.3rem;
@@ -453,7 +459,6 @@ a {
   display: block;
   height: calc(100vh - 33rem);
   overflow-y: auto;
-  padding-left: 0.25rem;
 }
 
 .group_data thead,
@@ -464,16 +469,10 @@ a {
 }
 .tdflex {
   display: flex;
-  align-items: center;
-  padding-left: 1rem;
 }
 .mediagroup0 img,
 .mediagroup1 img {
   margin-right: 0.8rem;
-}
-
-.settingmax {
-  max-width: 30%;
 }
 
 .mediagroup0 {
@@ -543,7 +542,7 @@ th:nth-child(3) {
   }
 }
 
-@media only screen and (max-width: 2000px) and (min-width: 1440px) {
+@media only screen and (max-width: 2000px) and (min-width: 1439px) {
   html {
     font-size: 16px;
   }
@@ -551,7 +550,7 @@ th:nth-child(3) {
 
 @media only screen and (max-width: 1439px) and (min-width: 900px) {
   html {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -560,7 +559,10 @@ th:nth-child(3) {
     display: none;
   }
   .mediagroup0 {
-    width: 30%;
+    width: 40%;
+  }
+  .mediagroup2{
+    width: 35%;
   }
 }
 
@@ -568,24 +570,21 @@ th:nth-child(3) {
   .child_side_navbar_top {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
-  body {
-    font-size: 0.9rem;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
   .child_side_navbar_top {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
-  .side_child_navbar_eleL {
+  /* .side_child_navbar_eleL {
     margin-left: 1.5rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1050px) {
-  .side_child_navbar_eleL {
+  /* .side_child_navbar_eleL {
     margin-left: 1rem;
-  }
+  } */
   .child_side_navbar_bottom img {
     width: 1.5rem;
   }
@@ -594,9 +593,9 @@ th:nth-child(3) {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 769px){
   html {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .mediagroup2 {
@@ -619,8 +618,13 @@ th:nth-child(3) {
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 20px;
+    font-size: 14px;
   }
+
+  .mediagroup2 {
+    display: none;
+  }
+
   header {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -631,12 +635,10 @@ th:nth-child(3) {
   .overflow_text {
     width: 8rem;
   }
-  body {
-    font-size: 0.75rem;
-  }
-  .mediagroup0 {
+ 
+   .mediagroup0 {
     width: 60%;
-  }
+  } 
   .parent_side_navbar {
     display: none;
   }
@@ -729,10 +731,7 @@ th:nth-child(3) {
 }
 
 @media only screen and (max-width: 500px) {
-  html {
-    font-size: 16px;
-  }
-
+  
   .mobile-groups {
     padding: 0.5rem 0.5rem 0.5rem 0rem;
   }
@@ -778,14 +777,14 @@ th:nth-child(3) {
     font-size: 0.7rem;
   }
   .group_data button {
-    padding: 0.2rem 0.2rem;
+    padding: 0.2rem 1rem;
   }
   .top_child_navbar_eleR button {
     padding: 0.5rem 0.4rem;
   }
-  .mediagroup0 {
+  /* .mediagroup0 {
     width: 60%;
-  }
+  } */
   .groupsrch {
     max-width: 200px;
   }
@@ -798,6 +797,12 @@ th:nth-child(3) {
   }
   .checkboxwidth {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1046px){
+  .overflow_text{
+    width: 4rem;
   }
 }
 
@@ -818,7 +823,7 @@ input {
 }
 
 .recommended_group_textname {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: rgb(168, 168, 168);
   margin-top: 5px;
 }
