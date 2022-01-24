@@ -91,3 +91,14 @@ function debounce(func, timeout = 500){
   });
 
   
+function toggleNavbar(){
+  let checkClass = document.getElementById("side-navbar");
+  if (checkClass.className === "parent_side_navbar")
+  {
+      checkClass.className += "closeNavbar";
+  }
+  else
+  {
+      checkClass.className = "parent_side_navbar"; 
+  } 
+}

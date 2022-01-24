@@ -235,6 +235,7 @@ hr {
 .wrapper-content-main {
   padding: 2rem;
   height: 100%;
+  overflow: hidden;
 }
 
 .parent-wrapper-group-box {
