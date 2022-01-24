@@ -248,7 +248,7 @@ hr {
   display: none;
 }
 
-.joinbutton{
+.joinbutton {
   text-align: left;
 }
 
@@ -368,10 +368,9 @@ th:nth-child(3) {
   height: 1rem;
   border: solid 1px #c3c7ca;
   background-color: #fff;
-  
 }
 
-.tablecheckbox{
+.tablecheckbox {
   padding-right: 1rem;
   padding-left: 0.5rem;
 }
@@ -390,7 +389,6 @@ th:nth-child(3) {
   font-size: 0.8rem;
   overflow: scroll;
 }
-
 
 .group_data img {
   height: 1.3rem;
@@ -562,7 +560,7 @@ th:nth-child(3) {
   .mediagroup0 {
     width: 40%;
   }
-  .mediagroup2{
+  .mediagroup2 {
     width: 35%;
   }
 }
@@ -594,9 +592,9 @@ th:nth-child(3) {
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 769px){
+@media only screen and (max-width: 900px) and (min-width: 769px) {
   html {
-    font-size: 19px;
+    font-size: 12px;
   }
 
   .mediagroup2 {
@@ -636,10 +634,10 @@ th:nth-child(3) {
   .overflow_text {
     width: 8rem;
   }
- 
-   .mediagroup0 {
+
+  .mediagroup0 {
     width: 60%;
-  } 
+  }
   .parent_side_navbar {
     display: none;
   }
@@ -732,7 +730,6 @@ th:nth-child(3) {
 }
 
 @media only screen and (max-width: 500px) {
-  
   .mobile-groups {
     padding: 0.5rem 0.5rem 0.5rem 0rem;
   }
@@ -801,8 +798,8 @@ th:nth-child(3) {
   }
 }
 
-@media only screen and (max-width: 1046px){
-  .overflow_text{
+@media only screen and (max-width: 1046px) {
+  .overflow_text {
     width: 4rem;
   }
 }
