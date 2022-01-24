@@ -136,7 +136,7 @@ img {
 }
 
 section {
-  height: 100%;
+  height: calc(100vh-5rem);
   background-color: #f2f4f8;
   overflow: hidden;
 }
@@ -594,7 +594,7 @@ th:nth-child(3) {
 
 @media only screen and (max-width: 900px) and (min-width: 769px) {
   html {
-    font-size: 12px;
+    font-size: 12rpx;
   }
 
   .mediagroup2 {
