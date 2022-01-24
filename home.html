@@ -12,7 +12,7 @@
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
-    />    
+    />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -91,13 +91,13 @@
               RECOMMENDED GROUPS:
               <span style="float: right"
                 ><img
-                  onClick="scrollbtn(this.id)"
-                  id="scroll_left"
+                  onClick="groupbutton(this.id)"
+                  id="left_button"
                   src="images/Arrow_back.svg"
                   alt="img!" />
                 <img
-                  onClick="scrollbtn(this.id)"
-                  id="scroll_right"
+                  onClick="groupbutton(this.id)"
+                  id="right_button"
                   src="images/Arrow_forward.svg"
                   alt="img!"
               /></span>
@@ -206,18 +206,19 @@
                 <div class="top_child_navbar_eleR btnx groupfinder">
                   <i class="bx bx-search"></i>
                   <input
-                    id="inputtext"
+                    id="searchquery"
                     onkeyup="processChange()"
                     type="text"
-                    placeholder=" Find A Group"/>
+                    placeholder=" Find A Group"
+                  />
                   <button class="newgroup">+ New Group</button>
                 </div>
               </div>
               <div class="wrapper-table">
-                <table id="group_table" class="group_data" style="width: 100%;">
+                <table id="group_table" class="group_data" style="width: 100%">
                   <thead>
                     <tr class="group_data_TR">
-                      <th style="width: 10px;" class="tablecheckbox">
+                      <th style="width: 10px" class="tablecheckbox">
                         <input
                           onClick="selectall(this)"
                           class="checkbox_default"
@@ -226,7 +227,9 @@
                       </th>
                       <th
                         class="mediagroup0"
-                        style="color: black; text-decoration: none;">GROUP NAME<img
+                        style="color: black; text-decoration: none"
+                      >
+                        GROUP NAME<img
                           id="sorting"
                           class="sort"
                           src="images/Sorting.svg"
@@ -241,12 +244,12 @@
                       </th>
                       <th
                         class="mediagroup1 settingmax"
-                        style="text-decoration: none;"
+                        style="text-decoration: none"
                       >
                         GROUP OWNER
                       </th>
                       <th class="mediagroup2">CREATED ON</th>
-                      <th style="width: auto;">ACTIONS</th>
+                      <th style="width: auto">ACTIONS</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -267,12 +270,14 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
                     </tr>
                     <tr>
@@ -292,14 +297,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -316,14 +324,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -340,14 +351,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -364,14 +378,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -388,14 +405,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -412,14 +432,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -436,14 +459,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -460,14 +486,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -484,14 +513,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -508,14 +540,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -532,14 +567,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -556,14 +594,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -580,14 +621,17 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                       <td style="width: 10px">
                         <input
                           class="checkbox_default"
@@ -604,12 +648,14 @@
                       <td class="mediagroup1">
                         <div class="tdflex">
                           <img src="images/User_Multiple.svg" alt="img!" />
-                          <span class="overflow_text settingmax">Astitva Chauhan</span>
+                          <span class="overflow_text settingmax"
+                            >Astitva Chauhan</span
+                          >
                         </div>
                       </td>
                       <td class="mediagroup2">08/13/2021</td>
                       <td class="joinbutton">
-                        <button type="submit" style="width: auto;">Join</button>
+                        <button type="submit" style="width: auto">Join</button>
                       </td>
                     </tr>
                   </tbody>

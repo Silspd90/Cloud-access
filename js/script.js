@@ -1,14 +1,14 @@
-function scrollbtn(clickedbtn){
-    if (clickedbtn == 'scroll_left'){
+function groupbutton(clickedbtn){
+    if (clickedbtn == 'left_button'){
         document.getElementById('groupscroller').scrollLeft -= 311;
     }
-    else{
+    if (clickedbtn == 'right_button'){
         document.getElementById('groupscroller').scrollLeft += 311;        
     }
 }
 
 function filtertable(){
-    let newinput = document.getElementById("inputtext");
+    let newinput = document.getElementById("searchquery");
     let filter = newinput.value.toUpperCase();
 
     let tablevalue = document.getElementById("group_table");
