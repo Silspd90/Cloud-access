@@ -72,10 +72,7 @@ function debounce(func, timeout = 500){
   
   table.querySelector("th").classList.toggle("th-sort-asc", asc);
   table.querySelector("th").classList.toggle("th-sort-desc", !asc);
-  }
-  
-  
-  
+  }  
   
   let whichSort = document.getElementById("sorting");
   
@@ -90,15 +87,12 @@ function debounce(func, timeout = 500){
   
   });
 
-  
-function toggleNavbar(){
-  let checkClass = document.getElementById("side-navbar");
-  if (checkClass.className === "parent_side_navbar")
-  {
-      checkClass.className += "closeNavbar";
-  }
-  else
-  {
-      checkClass.className = "parent_side_navbar"; 
-  } 
-}
+  // toggle navbar
+
+  const togglebutton = document.getElementsByClassName("toggle-button")[0]
+  const navbarlinks = document.getElementsByClassName("parent_side_navbar")[0]
+
+  togglebutton.addEventListener('click', () => {
+    navbarlinks.classList.toggle('active')
+
+  })
