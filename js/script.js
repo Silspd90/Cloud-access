@@ -89,10 +89,9 @@ function debounce(func, timeout = 500){
 
   // toggle navbar
 
-  const togglebutton = document.getElementsByClassName("toggle-button")[0]
-  const navbarlinks = document.getElementsByClassName("parent_side_navbar")[0]
-
-  togglebutton.addEventListener('click', () => {
-    navbarlinks.classList.toggle('active')
-
+  const menu_btn = document.querySelector('.toggle-button');
+  const sidenav = document.querySelector('.parent_side_navbar');
+  menu_btn.addEventListener('click', function (){
+    menu_btn.classList.toggle('isactive');
+    sidenav.classList.toggle('isactive');
   })

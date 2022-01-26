@@ -26,24 +26,37 @@ button:focus {
   justify-content: space-between;
   height: 15px;
   width: 21px;
+  border: none;
 }
 
-.toggle-button .bar {
+.toggle-button .bar,
+.toggle-button:after,
+.toggle-button:before {
+  content: "";
+  display: block;
   height: 3px;
   width: 100%;
   background-color: #e20074;
   border-radius: 10px;
+  transition: 0.4s;
+}
+
+.toggle-button.isactive:before {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.toggle-button.isactive:after {
+  transform: rotate(45deg) translate(-8px, 8px);
+}
+
+.toggle-button.isactive .bar {
+  opacity: 0;
 }
 
 .fa-bars {
   color: #e20074;
   margin-right: 1rem;
 }
-/* 
-#toggleNavbar {
-  display: none;
-  font-size: 1rem;
-} */
 
 header {
   letter-spacing: 0.2mm;
@@ -640,6 +653,10 @@ th:nth-child(3) {
     font-size: 14px;
   }
 
+  .toggle-button {
+    display: block;
+  }
+
   .mediagroup2 {
     display: none;
   }
@@ -662,8 +679,19 @@ th:nth-child(3) {
   .mediagroup0 {
     width: 60%;
   }
+
   .parent_side_navbar {
-    display: none;
+    /* display: none; */
+    position: fixed;
+    z-index: 98;
+    right: 100%;
+    width: 100%;
+    background-color: white;
+    transition: 1s;
+  }
+
+  .parent_side_navbar.isactive {
+    right: 0;
   }
 
   .top_child_navbar_eleL {
@@ -684,9 +712,9 @@ th:nth-child(3) {
 }
 
 @media only screen and (max-width: 640px) {
-  #toggleNavbar {
+  /* #toggleNavbar {
     display: block;
-  }
+  } */
   .child_side_navbar_top {
     padding: 1rem 1rem 0rem 1rem;
   }
