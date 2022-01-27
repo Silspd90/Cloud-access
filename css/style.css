@@ -46,7 +46,7 @@ button:focus {
 }
 
 .toggle-button.isactive:after {
-  transform: rotate(45deg) translate(-8px, 8px);
+  transform: rotate(45deg) translate(-3px, 0px);
 }
 
 .toggle-button.isactive .bar {
